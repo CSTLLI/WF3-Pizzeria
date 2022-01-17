@@ -15,9 +15,11 @@
 
 :root{
 	--color-darkgray: #191c1e;
-	--color-white: #ffffff;
+	--color-gray: #595c5e;
+	--color-white: #cad2d6;
 	--color-black: #000000;
 	--color-yellow: #ffc760;
+	box-sizing: border-box;
 }
 
 body{
@@ -28,7 +30,7 @@ body{
 .container-mobile{
 	width: 90%;
 	margin: auto;
-	padding: 40px 0 100px 0;
+	padding: 30px 0;
 }
 
 /* ### MOBILE ### */
@@ -59,6 +61,7 @@ header nav img{
 
 .presentation{
 	background-image: url("../images/slide_1.jpg");
+	padding: 40px 0 100px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -111,6 +114,8 @@ header nav img{
 	margin: auto;
 }
 
+/* BUTTONS */
+
 .buttons{
 	display: flex;
 	gap: 20px;
@@ -135,4 +140,99 @@ header nav img{
 	border: 2px solid var(--color-yellow);
 	background-color: var(--color-yellow);
 
+}
+
+/* ### MAIN ### */
+
+.qualities{
+	background-image: url(../images/back_2.png);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.qualities h2{
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/* MENU DES PIZZAS  */
+
+.menu{
+	background-color: var(--color-darkgray);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: justify;
+	text-align-last: center;
+	color: var(--color-white);
+}
+
+.menu img{
+	width: 50%;
+}
+
+.menu h2, 
+.menu h3{
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.menu p{
+	font-size: 0.8rem;
+}
+
+/* FOOTER */
+
+footer{
+	background-color: var(--color-darkgray);
+	border-top: 1px solid var(--color-gray);
+	display: flex;
+	justify-content: center;
+	text-align: justify;
+	text-align-last: center;
+}
+
+footer img{
+	width: 40%;
+	padding: 20px 0;
+}
+
+.contact{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+#gray{
+	color: var(--color-gray);
+}
+
+#white{
+	color: var(--color-white);
+}
+
+footer nav ul{
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+footer nav ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	list-style: none;
+	color: var(--color-white);
+}
+
+.socialmedias{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+.socialmedias a{
+	font-size: 1.5rem;
+	color: var(--color-white);
 }
