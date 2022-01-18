@@ -14,3 +14,48 @@
 /* ################# DEKSTOP */
 
 /* HEADER */
+
+/* ### MEDIA QUERIES ###  */
+
+@media only screen and (min-width: 1024px) {
+
+	/* HEADER  */
+
+	header .nav-mobile{
+		display: none;
+	}
+
+	header .nav-dekstop{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contact{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.navbar{
+		text-align: center;
+	}
+
+	/* MAIN  */
+	.menu{
+		padding: 80px 0;
+	}
+
+	.pizza-cards,
+	.cards{
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+	}
+
+	/* FOOTER  */
+
+	footer img{
+		width: 15%;
+	}
+}

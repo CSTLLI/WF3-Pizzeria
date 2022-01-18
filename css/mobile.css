@@ -38,7 +38,7 @@ body{
 /* HEADER  */
 
 /* NAV */
-header nav{
+header .nav-mobile{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,7 +46,7 @@ header nav{
 	background-color: var(--color-darkgray);
 }
 
-header nav img{
+header .nav-mobile img{
 	width: 50%;
 }
 
@@ -200,21 +200,16 @@ footer img{
 	padding: 20px 0;
 }
 
-.contact{
-	display: flex;
-	justify-content: center;
-	gap: 10px;
-}
-
-#gray{
+.gray{
 	color: var(--color-gray);
 }
 
-#white{
+.white{
 	color: var(--color-white);
 }
 
-footer nav ul{
+footer nav ul,
+header .nav-dekstop ul{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -224,7 +219,8 @@ footer nav ul{
 }
 
 
-footer nav ul li a{
+footer nav ul li a,
+header .nav-dekstop ul li a{
 	text-transform: uppercase;
 	text-decoration: none;
 	color: var(--color-white);
