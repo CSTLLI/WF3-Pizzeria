@@ -7,13 +7,21 @@
 /* By: vcastell <valeriocastellipro@gmail.com>	        | $$$$_  $$$$| $$__/    |___  $$  */
 /*                                              		| $$$/ \  $$$| $$      /$$  \ $$  */
 /* Created: 2022/01/16 13:55:21 vcastell     	        | $$/   \  $$| $$     |  $$$$$$/  */
-/* Updated: 2022/01/17 10:38:56 vcastell                |__/     \__/|__/      \______/   */
+/* Updated: 2022/01/19 16:13:56 vcastell                |__/     \__/|__/      \______/   */
 /*                                                                    				      */
 /******************************************************************************************/
 
 /* ################# DEKSTOP */
 
 /* HEADER */
+
+header .nav-dekstop{
+	display: none;
+}
+
+header .container-dekstop{
+	display: none;
+}
 
 /* ### MEDIA QUERIES ###  */
 
@@ -28,17 +36,114 @@
 	header .nav-dekstop{
 		display: flex;
 		justify-content: space-between;
+		padding: 20px 30px;
 	}
 
-	.contact{
+	header .nav-dekstop .navbar ul{
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		align-items: center;
-		gap: 10px;
+		gap: 15px;
+		padding-top: 10px;
+		padding-left: 0;
+		list-style: none;
 	}
 
-	.navbar{
+	header .nav-dekstop .navbar ul li a{
+		text-transform: uppercase;
+		text-decoration: none;
+		color: var(--color-white);
+	}
+
+	header .nav-dekstop i{
+		font-size: 2rem;
+	}
+
+	header .contact{
+		display: flex;
+		text-align: left;
+		align-items: center;
+	}
+
+	header .contact i{
+		padding-right: 30px;
+	}
+
+	header .navbar{
 		text-align: center;
+	}
+
+	header .shopping-cart{
+		text-align: right;
+		display: flex;
+		align-items: center;
+	}
+
+	header .shopping-cart i{
+		padding-left: 30px;
+	}
+
+	header .shopping-icons{
+		position: relative;
+	}
+
+	header .circle{
+		font-size: 0.7rem;
+		position: absolute;
+		background-color: #ffc760;
+		border-radius: 50%;
+		padding: 5px 10px;
+		right: -10px;
+		top: 0px;
+	}
+
+	/* PRESENTATION */
+
+	header .presentation{
+		padding: 0;
+	}
+
+	header .presentation .container-mobile{
+		display: none;
+	}
+
+	header .container-dekstop{
+		padding: 40px 50px;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		align-items: center;
+	}
+	
+	header .container-dekstop h1{
+		margin: 0 0 10px 0;
+		color: var(--color-white);
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	
+	header .container-dekstop h2{
+		margin: 0;
+		color: var(--color-white);
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	
+	header .container-dekstop p{
+		color: var(--color-white);
+	}
+	
+	header .container-dekstop img{
+		width: 20%;
+	}
+
+	header .container-dekstop i{
+		font-size: 2rem;
+		color: white;
+	}
+	
+	header .container-dekstop .desc .selector{
+		justify-content: center;
 	}
 
 	/* MAIN  */

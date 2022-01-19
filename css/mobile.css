@@ -7,7 +7,7 @@
 /* By: vcastell <valeriocastellipro@gmail.com>	        | $$$$_  $$$$| $$__/    |___  $$  */
 /*                                              		| $$$/ \  $$$| $$      /$$  \ $$  */
 /* Created: 2022/01/16 13:55:21 vcastell     	        | $$/   \  $$| $$     |  $$$$$$/  */
-/* Updated: 2022/01/12 10:38:56 vcastell                |__/     \__/|__/      \______/   */
+/* Updated: 2022/01/12 16:14:56 vcastell                |__/     \__/|__/      \______/   */
 /*                                                                    				      */
 /******************************************************************************************/
 
@@ -33,6 +33,22 @@ body{
 	padding: 30px 0;
 }
 
+.gray{
+	color: var(--color-gray);
+}
+
+.white{
+	color: var(--color-white);
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.bg-nav{
+	background-color: var(--color-darkgray);
+}
+
 /* ### MOBILE ### */
 
 /* HEADER  */
@@ -43,7 +59,6 @@ header .nav-mobile{
 	justify-content: center;
 	align-items: center;
 	padding: 40px 20px 60px 20px;
-	background-color: var(--color-darkgray);
 }
 
 header .nav-mobile img{
@@ -61,6 +76,9 @@ header .nav-mobile img{
 
 .presentation{
 	background-image: url("../images/slide_1.jpg");
+}
+
+.presentation .container-mobile{
 	padding: 40px 0 100px 0;
 	display: flex;
 	flex-direction: column;
@@ -68,27 +86,31 @@ header .nav-mobile img{
 	text-align: center;
 }
 
-.presentation h1{
+.presentation .container-mobile h1{
 	margin: 0 0 10px 0;
 	color: var(--color-white);
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
-.presentation h2{
+.presentation .container-mobile h2{
 	margin: 0;
 	color: var(--color-white);
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
-.presentation p{
+.presentation .container-mobile p{
 	color: var(--color-white);
 }
 
-.presentation img{
+.presentation .container-mobile img{
 	width: 50%;
 	margin: auto;
+}
+
+.presentation .container-mobile .desc{
+	align-items: center;
 }
 
 .selector{
@@ -120,6 +142,7 @@ header .nav-mobile img{
 	display: flex;
 	gap: 20px;
 	width: 90%;
+	justify-content: center;
 	margin: auto;
 }
 
@@ -200,16 +223,7 @@ footer img{
 	padding: 20px 0;
 }
 
-.gray{
-	color: var(--color-gray);
-}
-
-.white{
-	color: var(--color-white);
-}
-
-footer nav ul,
-header .nav-dekstop ul{
+footer nav ul{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -219,8 +233,7 @@ header .nav-dekstop ul{
 }
 
 
-footer nav ul li a,
-header .nav-dekstop ul li a{
+footer nav ul li a{
 	text-transform: uppercase;
 	text-decoration: none;
 	color: var(--color-white);
