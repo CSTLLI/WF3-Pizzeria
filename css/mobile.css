@@ -213,6 +213,11 @@ header .nav-mobile img{
 	text-transform: uppercase;
 }
 
+.card{
+	text-align: center;
+	align-items: center;
+}
+
 /* MENU DES PIZZAS  */
 
 .menu{
@@ -223,6 +228,11 @@ header .nav-mobile img{
 	text-align: justify;
 	text-align-last: center;
 	color: var(--color-white);
+}
+
+.menu .pizza-cards{
+	text-align: center;
+	align-items: center;
 }
 
 .menu img{
