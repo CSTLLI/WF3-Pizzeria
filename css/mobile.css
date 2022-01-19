@@ -49,6 +49,38 @@ body{
 	background-color: var(--color-darkgray);
 }
 
+.spikes {
+	position: relative;
+}
+  
+header .spikes::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: -0%;
+	top: 100%;
+	z-index: 10;
+	display: block;
+	height: 50px;
+	background-size: 20px 100%;
+	background-image: linear-gradient(135deg, var(--color-darkgray) 25%, transparent 25%), linear-gradient(225deg, var(--color-darkgray) 25%, transparent 25%);
+	background-position: 0 0;
+}
+
+main .spikes::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: -0%;
+	bottom: 0;
+	z-index: 10;
+	display: block;
+	height: 50px;
+	background-size: 20px 100%;
+	background-image: linear-gradient(45deg, var(--color-darkgray) 25%, transparent 25%), linear-gradient(321deg, var(--color-darkgray) 25%, transparent 25%);
+	background-position: 0 0;
+}
+
 /* ### MOBILE ### */
 
 /* HEADER  */
